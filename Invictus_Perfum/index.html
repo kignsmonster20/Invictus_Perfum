@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#050505">
+    <meta name="description" content="Invictus Perfum — perfumería de autor, fragancias seleccionadas y atención personalizada.">
+    <title>Invictus Perfum — Private Fragrance House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="announcement">
+        <div>ENVÍO GRATUITO EN PEDIDOS SUPERIORES A Q1,000</div>
+        <div class="announcement-center">PRIVATE FRAGRANCE HOUSE</div>
+        <div>ATENCIÓN PERSONALIZADA <span>·</span> GUATEMALA</div>
+    </div>
+
+    <header class="header" id="top">
+        <button class="mobile-menu" id="mobileMenu">☰</button>
+        <a href="#top" class="brand"><img src="assets/logo.png" alt="Invictus Perfum"></a>
+
+        <nav class="nav" id="mainNav">
+            <a href="#collections">Colecciones</a>
+            <a href="#bestsellers">Destacados</a>
+            <a href="#finder">Perfume Finder</a>
+            <a href="#maison">La Maison</a>
+            <a href="#journal">Journal</a>
+        </nav>
+
+        <div class="header-tools">
+            <button class="round-btn" id="searchOpen" aria-label="Buscar">⌕</button>
+            <button class="round-btn" id="accountOpen" aria-label="Cuenta">♙</button>
+            <button class="bag-btn" id="bagOpen">BOLSA <b id="bagCount">0</b></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-noise"></div>
+            <div class="hero-copy">
+                <div class="eyebrow">INV. PRIVATE COLLECTION · 2026</div>
+                <h1>Una firma que<br><em>entra antes que tú.</em></h1>
+                <p>Fragancias seleccionadas para convertir una presencia en recuerdo.</p>
+                <div class="hero-actions">
+                    <a href="#collections" class="btn gold">DESCUBRIR LA COLECCIÓN</a>
+                    <a href="#finder" class="text-link">ENCUENTRA TU FRAGANCIA <span>→</span></a>
+                </div>
+            </div>
+
+            <div class="hero-object">
+                <div class="halo"></div>
+                <div class="hero-bottle">
+                    <span class="cap"></span>
+                    <span class="bottle-logo">IV</span>
+                    <span class="bottle-name">NOIR<br><small>EAU DE PARFUM</small></span>
+                </div>
+                <div class="floating-label label-one">01 / NOIR</div>
+                <div class="floating-label label-two">PRIVATE<br>SELECTION</div>
+            </div>
+
+            <div class="hero-scroll">SCROLL TO EXPLORE <span>↓</span></div>
+        </section>
+
+        <section class="marquee">
+            <div>PRIVATE COLLECTION</div><i>✦</i><div>EAU DE PARFUM</div><i>✦</i>
+            <div>EXCEPTIONAL NOTES</div><i>✦</i><div>CRAFTED PRESENCE</div><i>✦</i>
+            <div>PRIVATE COLLECTION</div>
+        </section>
+
+        <section class="intro section">
+            <div class="intro-number">01</div>
+            <div class="intro-title">
+                <span class="eyebrow">THE HOUSE</span>
+                <h2>La perfumería<br><em>como identidad.</em></h2>
+            </div>
+            <div class="intro-copy">
+                <p>Invictus Perfum selecciona fragancias con una idea simple: el perfume no termina en la piel. Se queda en la memoria.</p>
+                <a href="#maison" class="under-link">CONOCER LA MAISON →</a>
+            </div>
+        </section>
+
+        <section class="editorial-feature">
+            <div class="editorial-visual">
+                <div class="vertical-word">INVICTUS</div>
+                <div class="editorial-bottle">
+                    <span></span>
+                    <b>IV</b>
+                    <small>PRIVATE<br>RESERVE</small>
+                </div>
+                <div class="edition">EDITION<br><strong>NO. 07</strong></div>
+            </div>
+            <div class="editorial-text">
+                <span class="eyebrow">THE SIGNATURE EDIT</span>
+                <h2>Oscura.<br>Magnética.<br><em>Imposible de ignorar.</em></h2>
+                <p>Una selección construida alrededor de maderas profundas, ámbar, especias y cuero. Para noches en las que la presencia habla por sí sola.</p>
+                <div class="editorial-specs">
+                    <div><span>FAMILIA</span><b>AMBER · WOODY</b></div>
+                    <div><span>CONCENTRACIÓN</span><b>EAU DE PARFUM</b></div>
+                    <div><span>ESTELA</span><b>ALTA</b></div>
+                </div>
+                <a href="#collections" class="btn outline">EXPLORAR SIGNATURE</a>
+            </div>
+        </section>
+
+        <section class="section collections" id="collections">
+            <div class="section-head">
+                <div>
+                    <span class="eyebrow">02 · COLLECTIONS</span>
+                    <h2>Encuentra tu<br><em>próxima firma.</em></h2>
+                </div>
+                <p>Explora más de treinta composiciones organizadas por carácter, ocasión y familia olfativa.</p>
+            </div>
+
+            <div class="collection-tabs">
+                <button class="tab active" data-category="all">TODAS</button>
+                <button class="tab" data-category="men">CABALLERO</button>
+                <button class="tab" data-category="women">DAMA</button>
+                <button class="tab" data-category="unisex">UNISEX</button>
+                <button class="tab" data-category="niche">PRIVATE RESERVE</button>
+                <button class="tab" data-category="new">NOVEDADES</button>
+            </div>
+            <div class="catalog-grid" id="catalog"></div>
+            <div class="catalog-more"><button class="btn outline" id="loadMore">VER MÁS FRAGANCIAS</button></div>
+        </section>
+
+        <section class="split-banner">
+            <div class="split-panel dark">
+                <span class="eyebrow">FOR HIM</span>
+                <h2>Carácter<br><em>sin ruido.</em></h2>
+                <p>Maderas, cuero, especias y ámbar para una presencia definida.</p>
+                <a href="#collections" class="under-link" data-jump-category="men">VER CABALLERO →</a>
+            </div>
+            <div class="split-panel light">
+                <span class="eyebrow">FOR HER</span>
+                <h2>Elegancia<br><em>en movimiento.</em></h2>
+                <p>Flores, almizcles, vainilla y acordes luminosos.</p>
+                <a href="#collections" class="under-link" data-jump-category="women">VER DAMA →</a>
+            </div>
+        </section>
+
+        <section class="bestsellers section" id="bestsellers">
+            <div class="section-head compact">
+                <div>
+                    <span class="eyebrow">03 · MOST WANTED</span>
+                    <h2>Los más<br><em>buscados.</em></h2>
+                </div>
+                <p>Composiciones que se han convertido en parte de nuestra selección permanente.</p>
+            </div>
+            <div class="featured-row" id="featured"></div>
+        </section>
+
+        <section class="finder" id="finder">
+            <div class="finder-intro">
+                <span class="eyebrow">04 · PERFUME FINDER</span>
+                <h2>Tu aroma no debería<br><em>ser al azar.</em></h2>
+                <p>Ajusta cada acorde y construye el perfil que quieres llevar. Nuestro sistema compara tu selección con la colección.</p>
+                <div class="finder-result">
+                    <span>PERFIL MÁS CERCANO</span>
+                    <strong id="finderResult">NOIR EXECUTIVE</strong>
+                    <b id="finderScore">94%</b>
+                </div>
+            </div>
+
+            <div class="finder-controls">
+                <div class="finder-top"><span>AJUSTA TU PERFIL</span><button id="resetFinder">RESTABLECER</button></div>
+                <div class="slider-row"><label>Amaderado <b id="woodOut">82%</b></label><input class="scent-slider" data-note="wood" type="range" value="82"></div>
+                <div class="slider-row"><label>Ámbar <b id="amberOut">72%</b></label><input class="scent-slider" data-note="amber" type="range" value="72"></div>
+                <div class="slider-row"><label>Fresco <b id="freshOut">32%</b></label><input class="scent-slider" data-note="fresh" type="range" value="32"></div>
+                <div class="slider-row"><label>Dulce <b id="sweetOut">35%</b></label><input class="scent-slider" data-note="sweet" type="range" value="35"></div>
+                <div class="slider-row"><label>Especiado <b id="spicyOut">66%</b></label><input class="scent-slider" data-note="spicy" type="range" value="66"></div>
+                <div class="slider-row"><label>Cuero / Oscuro <b id="leatherOut">76%</b></label><input class="scent-slider" data-note="leather" type="range" value="76"></div>
+                <div class="slider-row"><label>Floral <b id="floralOut">28%</b></label><input class="scent-slider" data-note="floral" type="range" value="28"></div>
+                <div class="slider-row"><label>Almizcle <b id="muskOut">45%</b></label><input class="scent-slider" data-note="musk" type="range" value="45"></div>
+                <div class="finder-match"><span>COINCIDENCIA</span><div><b id="matchValue">94%</b><i id="matchLine"></i></div></div>
+            </div>
+        </section>
+
+        <section class="ritual section">
+            <div class="section-head compact">
+                <div>
+                    <span class="eyebrow">05 · THE RITUAL</span>
+                    <h2>El perfume<br><em>también se viste.</em></h2>
+                </div>
+                <p>Una guía rápida para hacer que tu fragancia permanezca y se transforme durante el día.</p>
+            </div>
+            <div class="ritual-grid">
+                <article><span>01</span><h3>PIEL</h3><p>Hidrata antes de aplicar para ayudar a conservar las notas.</p></article>
+                <article><span>02</span><h3>DISTANCIA</h3><p>Rocía a unos centímetros de la piel sin frotar después.</p></article>
+                <article><span>03</span><h3>PULSO</h3><p>Cuello, muñecas y detrás de las orejas son puntos clásicos.</p></article>
+                <article><span>04</span><h3>TIEMPO</h3><p>Espera unos minutos: la composición cambia mientras evoluciona.</p></article>
+            </div>
+        </section>
+
+        <section class="quiz">
+            <div class="quiz-image"><div class="quiz-seal">IV<br><small>FIND<br>YOUR<br>SIGNATURE</small></div></div>
+            <div class="quiz-content">
+                <span class="eyebrow">06 · PRIVATE CONSULTATION</span>
+                <h2>Una fragancia para<br><em>tu próximo momento.</em></h2>
+                <p>Cuéntanos qué buscas. Te mostraremos una selección según tu ocasión y estilo.</p>
+                <div class="quiz-progress"><i id="quizProgress"></i></div>
+                <div class="quiz-step active" data-q="1">
+                    <span>¿CUÁNDO LA USARÁS?</span>
+                    <button data-a="night">Noche / evento</button><button data-a="daily">Todos los días</button><button data-a="date">Cita / cena</button>
+                </div>
+                <div class="quiz-step" data-q="2">
+                    <span>¿QUÉ PRESENCIA BUSCAS?</span>
+                    <button data-a="bold">Intensa</button><button data-a="clean">Limpia</button><button data-a="warm">Cálida</button>
+                </div>
+                <div class="quiz-step" data-q="3">
+                    <span>¿QUÉ TE REPRESENTA?</span>
+                    <button data-a="dark">Oscuro</button><button data-a="fresh">Luminoso</button><button data-a="unique">Único</button>
+                </div>
+                <div class="quiz-answer" id="quizAnswer"></div>
+            </div>
+        </section>
+
+        <section class="maison section" id="maison">
+            <div class="maison-image"><div class="maison-monogram">V</div><div class="maison-caption">EST. 2026 · GUATEMALA</div></div>
+            <div class="maison-copy">
+                <span class="eyebrow">07 · LA MAISON</span>
+                <h2>Diseñada para quienes<br><em>no buscan lo común.</em></h2>
+                <p>Invictus Perfum nace alrededor de una obsesión: seleccionar fragancias que tengan personalidad propia. Desde perfiles frescos y limpios hasta composiciones densas de oud, cuero y ámbar.</p>
+                <p>La experiencia comienza antes de abrir el frasco y termina cuando alguien te pregunta qué perfume llevas.</p>
+                <div class="maison-stats"><div><b>30+</b><span>FRAGANCIAS</span></div><div><b>08</b><span>FAMILIAS</span></div><div><b>GT</b><span>ORIGEN</span></div></div>
+            </div>
+        </section>
+
+        <section class="journal section" id="journal">
+            <div class="section-head compact">
+                <div><span class="eyebrow">08 · THE JOURNAL</span><h2>Notas de<br><em>la Maison.</em></h2></div>
+                <a class="under-link" href="#journal">VER TODOS →</a>
+            </div>
+            <div class="journal-grid">
+                <article><div class="journal-image j1"><span>01</span></div><small>GUÍA · 06 MIN</small><h3>Cómo elegir una fragancia que realmente se sienta tuya.</h3><a href="#finder">LEER →</a></article>
+                <article><div class="journal-image j2"><span>02</span></div><small>NOTAS · 04 MIN</small><h3>Oud, ámbar y cuero: el lenguaje de las fragancias oscuras.</h3><a href="#finder">LEER →</a></article>
+                <article><div class="journal-image j3"><span>03</span></div><small>RITUAL · 03 MIN</small><h3>La diferencia entre una fragancia que huele bien y una que deja huella.</h3><a href="#finder">LEER →</a></article>
+            </div>
+        </section>
+
+        <section class="concierge">
+            <div>
+                <span class="eyebrow">09 · PRIVATE CONCIERGE</span>
+                <h2>¿Buscas algo<br><em>más personal?</em></h2>
+            </div>
+            <div>
+                <p>Permítenos conocer tu estilo y te ayudaremos a construir una selección de fragancias para ti o para regalar.</p>
+                <button class="btn gold" id="conciergeOpen">HABLAR CON CONCIERGE</button>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <span class="eyebrow">PRIVATE ACCESS</span>
+            <h2>Entra en la lista privada.</h2>
+            <p>Lanzamientos, nuevas colecciones y selecciones especiales directamente en tu correo.</p>
+            <form id="newsletterForm"><input type="email" required placeholder="Tu correo electrónico"><button class="btn gold">UNIRME</button></form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-main">
+            <img src="assets/logo.png" alt="Invictus Perfum">
+            <p>PRIVATE FRAGRANCE HOUSE</p>
+        </div>
+        <div class="footer-col"><b>EXPLORAR</b><a href="#collections">Colecciones</a><a href="#finder">Perfume Finder</a><a href="#journal">Journal</a><a href="#maison">La Maison</a></div>
+        <div class="footer-col"><b>SERVICIO</b><a href="#top">Envíos</a><a href="#top">Cambios</a><a href="#top">Preguntas frecuentes</a><a href="#top">Contacto</a></div>
+        <div class="footer-col"><b>CONTACTO</b><span>Guatemala</span><span>concierge@invictusperfum.com</span><span>+502 0000-0000</span></div>
+        <div class="footer-bottom"><span>© 2026 INVICTUS PERFUM</span><span>PRIVACY · TERMS · COOKIES</span><span>INSTAGRAM · FACEBOOK · TIKTOK</span></div>
+    </footer>
+
+    <div class="search-layer" id="searchLayer">
+        <div class="search-panel"><button class="close-layer" id="searchClose">×</button><span class="eyebrow">SEARCH THE HOUSE</span><h2>Busca una fragancia.</h2><input id="globalSearch" placeholder="Nombre, familia, acorde..."><div id="searchResults"></div></div>
+    </div>
+
+    <aside class="bag" id="bag">
+        <div class="bag-head"><div><span class="eyebrow">PRIVATE BAG</span><h2>Tu selección</h2></div><button class="close-layer" id="bagClose">×</button></div>
+        <div class="bag-items" id="bagItems"></div>
+        <div class="bag-bottom"><div><span>Subtotal</span><b id="bagTotal">Q0.00</b></div><button class="btn gold full" id="checkoutOpen">CONTINUAR</button></div>
+    </aside>
+    <div class="dim" id="dim"></div>
+
+    <div class="modal" id="checkoutModal">
+        <div class="modal-card">
+            <button class="close-layer" id="checkoutClose">×</button>
+            <span class="eyebrow">CHECKOUT</span>
+            <h2>Finaliza tu selección.</h2>
+            <p class="modal-note">Completa tus datos para coordinar tu pedido.</p>
+            <form id="checkoutForm">
+                <div class="form-two"><input required placeholder="Nombre completo"><input required placeholder="Teléfono"></div>
+                <input required placeholder="Dirección de entrega">
+                <div class="form-two"><select required><option value="">Departamento</option><option>Guatemala</option><option>Sacatepéquez</option><option>Escuintla</option><option>Quetzaltenango</option><option>Otro</option></select><select required><option value="">Método de pago</option><option>Tarjeta</option><option>Transferencia</option><option>Pago contra entrega</option></select></div>
+                <div class="checkout-total"><span>TOTAL</span><b id="checkoutTotal">Q0.00</b></div>
+                <button class="btn gold full">CONFIRMAR PEDIDO</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="accountModal">
+        <div class="modal-card account-card"><button class="close-layer" id="accountClose">×</button><span class="eyebrow">PRIVATE ACCOUNT</span><h2>Tu mundo de fragancias.</h2><p>Guarda favoritos, consulta tus pedidos y recibe selecciones hechas para ti.</p><input placeholder="Correo electrónico"><input placeholder="Contraseña" type="password"><button class="btn gold full">INGRESAR</button><small>¿Nuevo aquí? Crear cuenta</small></div>
+    </div>
+
+    <div class="modal" id="conciergeModal">
+        <div class="modal-card"><button class="close-layer" id="conciergeClose">×</button><span class="eyebrow">PRIVATE CONCIERGE</span><h2>Hablemos de tu próxima fragancia.</h2><form id="conciergeForm"><input required placeholder="Tu nombre"><input required type="email" placeholder="Tu correo"><select required><option value="">¿Qué buscas?</option><option>Perfume personal</option><option>Regalo</option><option>Fragancia de pareja</option><option>Algo diferente</option></select><textarea required placeholder="Cuéntanos un poco sobre tu estilo..."></textarea><button class="btn gold full">ENVIAR SOLICITUD</button></form></div>
+    </div>
+
+    <div class="toast" id="toast"></div>
+    <script src="js/script.js"></script>
+</body>
+</html>
